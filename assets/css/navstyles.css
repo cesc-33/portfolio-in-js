@@ -1,0 +1,62 @@
+.headerMenu {
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    background-color: #292929;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.headerMenu .logo {
+    float: left;
+    color: #afafaf;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.headerMenu .header-right {
+    float: right;
+}
+
+.headerMenu .header-right nav {
+    display: flex;
+}
+
+.headerMenu .header-right nav a {
+    color: #afafaf;
+    text-decoration: none;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.headerLink.active,
+.headerMenu .header-right nav a:hover {
+    background-color: #afafaf;
+    color: #292929 !important;
+    cursor: pointer;
+}
+
+.headerMenu .header-right nav a:active {
+    background-color: #808080;
+    color: #292929;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.headerMenu .logo span {
+    font-size: 120%;
+}

@@ -1,0 +1,285 @@
+body,
+html {
+  /* height: 100%; */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+body {
+  padding-top: 80px;
+}
+
+section {
+  min-height: 50vh;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.card.active {
+  filter: blur(0);
+}
+
+.card {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 5px #00000031;
+  background-color: white;
+  color: #333333;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  scroll-margin-top: 20vh;
+  filter: blur(4px);
+  transition: filter .3s ease-in-out;
+}
+
+.card#aboutMeSection{
+  flex-direction: row;
+}
+.card .aboutMe {
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  padding: 0;
+}
+
+/* 
+################## 
+Interest Section
+##################
+*/
+.InterestIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgSrc {
+  flex: 0 0 150px;
+  margin: 10px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.imgSrc img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imgSrc.slideIn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.imgSrc.slideOut {
+  opacity: 0;
+  transform: translateX(100);
+}
+
+/* 
+################## 
+Hero Section
+##################
+*/
+.heroImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #292929;
+}
+
+#heroImageSection {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #444444;
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#heroImageSection::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #666666;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border-radius: 10px;
+}
+
+.heroText h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.heroText p {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.slideImg {
+  display: none;
+  width: 30%;
+  height: auto;
+}
+
+.slideImg.active {
+  display: block;
+}
+
+/*
+################## 
+Resume Section
+##################
+*/
+
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.resumeDate {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.content h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1em;
+  color: #666;
+}
+
+@media (min-width: 600px) {
+  .box-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .box-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*
+################## 
+Contact Section
+##################
+*/
+
+.ContactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fafafa;
+  width: 100%;
+}
+
+#contact-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.field, .message {
+  display: flex;
+  flex-direction: column;
+}
+
+.field input, .message textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.field input:focus, .message textarea:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.message textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-area button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-area button:hover {
+  background-color: #555;
+}

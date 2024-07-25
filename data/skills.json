@@ -1,0 +1,69 @@
+{
+  "skills": [
+    {
+      "name": "HTML",
+      "level": 8,
+      "description": "HTML ist eine maschinenlesbare Sprache (Auszeichnungssprache) zur Gliederung und Formatierung von Texten und Erstellung von Webseiten und Webanwendungen."
+    },
+    {
+      "name": "CSS",
+      "level": 4,
+      "description": "CSS wird verwendet, um das Layout und Design von Webseiten zu gestalten, einschließlich Farben, Darstellung und Schriftarten."
+    },
+    {
+      "name": "JavaScript",
+      "level": 7,
+      "description": "JavaScript ist eine Programmiersprache, die hauptsächlich zur Erstellung interaktiver und dynamischer Webseiten verwendet wird."
+    },
+    {
+      "name": "jQuery",
+      "level": 5,
+      "description": "jQuery ist eine schnelle, kleine und funktionsreiche JavaScript-Bibliothek, die das HTML-Dokument-Handling, Event-Handling und das Erstellen von Animationen vereinfacht."
+    },
+    {
+      "name": "React",
+      "level": 8,
+      "description": "React ist eine JavaScript-Bibliothek zur Erstellung von Benutzeroberflächen, insbesondere für Single-Page-Anwendungen."
+    },
+    {
+      "name": "JSON",
+      "level": 6,
+      "description": "JSON (JavaScript Object Notation) ist ein leichtgewichtiges Datenformat zum Austausch von Daten zwischen Client und Server."
+    },
+    {
+      "name": "Express",
+      "level": 7,
+      "description": "Express ist ein minimaler und flexibler Node.js-Webanwendungs-Framework, das eine robuste Reihe von Funktionen bietet, um Einzel- und Mehrseitige Webanwendungen zu entwickeln."
+    },
+    {
+      "name": "CouchDB",
+      "level": 6,
+      "description": "CouchDB ist eine dokumentenorientierte NoSQL-Datenbank, die eine einfache HTTP-Schnittstelle und JSON-Dokumente verwendet, um die Speicherung und Abfrage von Daten zu ermöglichen."
+    },
+    {
+      "name": "Node.js",
+      "level": 8,
+      "description": "Node.js ist eine plattformübergreifende, serverseitige Laufzeitumgebung, die auf der JavaScript-Engine von Chrome basiert und es ermöglicht, serverseitige Anwendungen in JavaScript zu schreiben."
+    },
+    {
+      "name": "SQL",
+      "level": 3,
+      "description": "SQL (Structured Query Language) ist eine Programmiersprache, die zur Verwaltung und Abfrage von Datenbanken verwendet wird."
+    },
+    {
+      "name": "C#",
+      "level": 7,
+      "description": "C# ist eine moderne, objektorientierte Programmiersprache, die von Microsoft entwickelt wurde und für eine Vielzahl von Anwendungen verwendet wird."
+    },
+    {
+      "name": "VB.NET",
+      "level": 5,
+      "description": "VB.NET ist eine objektorientierte Programmiersprache von Microsoft, die auf dem .NET-Framework basiert und zur Entwicklung von Windows-Anwendungen verwendet wird."
+    },
+    {
+      "name": "Java",
+      "level": 4,
+      "description": "Java ist eine weit verbreitete objektorientierte Programmiersprache, die plattformunabhängig ist und für viele Arten von Softwareanwendungen verwendet wird."
+    }
+  ]
+}
